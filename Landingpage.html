@@ -1,0 +1,850 @@
+
+<head>
+        <meta charset="utf-8">
+        <title>R2S Batiment</title>
+        <meta content="width=device-width, initial-scale=1.0" name="viewport">
+        
+        <!-- Données structurées pour SEO local -->
+<script type="application/ld+json">
+{
+  "@context": "https://schema.org",
+  "@type": "LocalBusiness",
+  "name": "R2S Bâtiment",
+  "image": "https://www.r2sbatiment.fr/img/logor2s.jpg",
+  "url": "https://www.r2sbatiment.fr",
+  "telephone": "01 41 71 20 68",
+  "address": {
+    "@type": "PostalAddress",
+    "streetAddress": "55 Rue Cartier-Bresson",
+    "addressLocality": "Pantin",
+    "postalCode": "93500",
+    "addressRegion": "Île-de-France",
+    "addressCountry": "FR"
+  },
+  "geo": {
+    "@type": "GeoCoordinates",
+    "latitude": 48.8949,
+    "longitude": 2.4089
+  },
+  "openingHoursSpecification": [
+    {
+      "@type": "OpeningHoursSpecification",
+      "dayOfWeek": [
+        "Monday",
+        "Tuesday",
+        "Wednesday",
+        "Thursday",
+        "Friday"
+      ],
+      "opens": "08:00",
+      "closes": "20:00"
+    }
+  ],
+  "sameAs": [
+    "https://www.instagram.com/r2sbatiment"
+  ],
+  "description": "Entreprise de rénovation bâtiment à Paris et en Île-de-France : façade, isolation, toiture, maçonnerie. Devis gratuit en 72h pour les copropriétés et particuliers."
+}
+</script>
+
+        <meta name="description" content="R2S Bâtiment est une entreprise spécialisée en rénovation à Paris et en Ile-de-France : façade, isolation, toiture, maçonnerie. Devis gratuit en 72h.">
+        <meta name="keywords" content="rénovation, ravalement, isolation, toiture, copropriété, bâtiment, Paris, 78, 77, 94, 93, 92, 91, 95, Ile-de-France, devis gratuit, entreprise rénovation">
+
+
+        <!-- Google Web Fonts -->
+        <link rel="preconnect" href="https://fonts.googleapis.com">
+        <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+        <!-- <link href="https://fonts.googleapis.com/css2?family=Playfair+Display:ital,wght@0,400..900;1,400..900&family=Roboto:wght@400;500;700&display=swap" rel="stylesheet">  -->
+        <link href="https://fonts.googleapis.com/css2?family=Exo+2:wght@400;600;700&display=swap" rel="stylesheet">
+
+
+        <!-- Icon Font Stylesheet -->
+       <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.15.4/css/all.css"/>
+        <link href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.4.1/font/bootstrap-icons.css" rel="stylesheet"> 
+
+        
+        <!-- Customized Bootstrap Stylesheet -->
+        <link href="css/bootstrap.min.css" rel="stylesheet">
+
+        <!-- Modern Web Fonts -->
+        <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600&family=Poppins:wght@500;600&display=swap" rel="stylesheet">
+        <link href="css/style.css" rel="stylesheet">
+
+
+        <!-- Libraries Stylesheet -->
+        <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/4.1.1/animate.min.css"/>
+        <link href="lib/animate/animate.min.css" rel="stylesheet">
+    
+        <link href="lib/lightbox/css/lightbox.min.css" rel="stylesheet">
+
+        <!-- Google tag (gtag.js) -->
+<script async src="https://www.googletagmanager.com/gtag/js?id=AW-17322554459">
+</script>
+
+<script>
+  window.dataLayer = window.dataLayer || [];
+  function gtag(){dataLayer.push(arguments);}
+  gtag('js', new Date());
+
+  gtag('config', 'AW-17322554459');
+</script>
+    <style>
+/* Général */
+body {
+  font-family: 'Exo 2', sans-serif;
+  margin: 0;
+  padding: 0;
+  overflow-x: hidden;
+}
+
+/* Hero section */
+.hero {
+  display: flex;
+  flex-wrap: wrap;
+  align-items: center;
+  justify-content: center;
+  padding: 2rem;
+  gap: 2rem;
+}
+
+.hero-text {
+  flex: 1 1 400px;
+  text-align: left;
+}
+
+.hero-text h1 {
+  font-size: 2.8rem;
+}
+
+.hero-image img {
+  width: 100%;
+  max-width: 500px;
+  height: auto;
+  border-radius: 1.5rem;
+}
+
+/* Spécialités */
+.specialty-item {
+  width: 18%;
+  min-width: 130px;
+  text-align: center;
+}
+
+.specialty-bubble img {
+  width: 100%;
+  height: auto;
+  border-radius: 50%;
+  max-width: 150px;
+  margin-bottom: 0.5rem;
+}
+
+/* Footer */
+footer ul {
+  padding-left: 0;
+}
+
+footer ul li {
+  margin-bottom: 0.5rem;
+}
+
+/* Topbar */
+.topbar .col-4 {
+  font-size: 0.9rem;
+}
+
+/* Responsive tablettes */
+@media screen and (max-width: 991px) {
+  .navbar .navbar-nav {
+    text-align: center;
+  }
+
+  .navbar .nav-item {
+    margin-bottom: 0.5rem;
+  }
+
+  .specialty-item {
+    width: 30%;
+  }
+
+  .hero-text h1 {
+    font-size: 2rem;
+    text-align: center;
+  }
+
+  .hero-text {
+    text-align: center;
+  }
+}
+
+/* Responsive mobiles */
+@media screen and (max-width: 575px) {
+  .hero {
+    flex-direction: column;
+    padding: 1rem;
+    text-align: center;
+  }
+
+  .hero-text h1 {
+    font-size: 1.7rem;
+  }
+
+  .hero-text h3 {
+    font-size: 1.1rem;
+  }
+
+  .btn {
+    font-size: 1rem;
+    padding: 0.5rem 1rem;
+  }
+
+  .topbar .col-4,
+  .topbar .text-end {
+    font-size: 0.75rem;
+    text-align: center !important;
+    padding: 0.2rem;
+  }
+
+  .specialty-item {
+    width: 100%;
+    margin-bottom: 1.5rem;
+  }
+
+  footer h5 {
+    font-size: 1rem;
+  }
+
+  footer .col-sm-4 {
+    margin-bottom: 1.5rem;
+  }
+
+  .navbar-brand img {
+    max-width: 120px;
+  }
+
+  .btn-lg-square {
+    width: 44px;
+    height: 44px;
+    font-size: 1rem;
+  }
+}
+.hero-form {
+  flex: 1 1 400px;
+  padding: 2rem;
+  background-color: #f8f9fa;
+  border-radius: 1rem;
+  box-shadow: 0 0 15px rgba(0, 0, 0, 0.05);
+}
+
+.hero-form form .form-label {
+  font-weight: 600;
+}
+
+.hero-form form .form-control,
+.hero-form form .form-select {
+  border-radius: 0.5rem;
+  box-shadow: none;
+}
+
+/* Responsive pour le formulaire */
+@media screen and (max-width: 768px) {
+  .hero {
+    flex-direction: column;
+  }
+
+  .hero-text,
+  .hero-form {
+    width: 100%;
+    padding: 1rem 0;
+  }
+}
+/* Header & navbar responsive */
+.navbar {
+  padding: 0.5rem 1rem;
+}
+
+.navbar-brand img {
+  max-height: 48px;
+  width: auto;
+}
+
+.navbar-toggler {
+  border: none;
+}
+
+.navbar-toggler:focus {
+  box-shadow: none;
+}
+
+@media screen and (max-width: 768px) {
+  .navbar-nav {
+    text-align: center;
+    padding-top: 1rem;
+  }
+
+  .navbar-nav .nav-link {
+    padding: 0.75rem 1rem;
+    font-size: 1.1rem;
+  }
+
+  .navbar .btn {
+    margin-top: 1rem;
+  }
+
+  .topbar .col-4 {
+    display: none; /* cache les colonnes secondaires */
+  }
+
+  .topbar .col-4.text-center {
+    display: block !important;
+    width: 100%;
+    text-align: center;
+    font-size: 0.8rem;
+    padding: 0.4rem;
+  }
+
+  .navbar .d-none.d-lg-block,
+  .d-none.d-xl-block {
+    display: none !important;
+  }
+}
+</style>
+
+
+    </head>
+
+
+    <body>
+
+
+
+        <!-- Spinner Start -->
+        <div id="spinner" class="show bg-white position-fixed translate-middle w-100 vh-100 top-50 start-50 d-flex align-items-center justify-content-center">
+            <div class="spinner-border text-primary" style="width: 3rem; height: 3rem;" role="status">
+                <span class="sr-only">Loading...</span>
+            </div>
+        </div>
+        <!-- Spinner End -->
+
+
+
+        <div class="container-fluid topbar d-none d-xl-block w-100">
+          <div class="row gx-0 align-items-center text-white fw-medium" style="height: 30px;">
+            
+            <!-- Colonne vide pour équilibrer -->
+            <div class="col-4"></div>
+            
+            <!-- Texte centré -->
+            <div class="col-4 text-center">
+              <i class="fas fa-map-marker-alt me-2"></i>
+              Les dernières actualités de la rénovation sur 
+              <a href="blog.html" class="text-white"><strong>Réno'Mag</strong></a>
+            </div>
+        
+            <!-- Téléphone aligné à droite -->
+            <div class="col-4 text-end pe-3">
+              <i class="fas fa-phone-alt me-2"></i> 01 41 71 20 68
+            </div>
+        
+          </div>
+        </div>
+        
+        
+        
+<!-- Début barre de navigation -->
+
+<nav class="navbar navbar-expand-lg navbar-dark navbar-custom sticky-top shadow-sm px-2 py-1">
+  <div class="container-fluid">
+    <a class="navbar-brand" href="index.html">
+      <img src="img/logor2s.jpg" alt="R2S Bâtiment" class="logo-r2s">
+    </a>
+    
+    <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarMetiers" aria-controls="navbarMetiers" aria-expanded="false" aria-label="Toggle navigation">
+      <span class="navbar-toggler-icon"></span>
+    </button>
+
+    <div class="collapse navbar-collapse" id="navbarMetiers">
+      <ul class="navbar-nav ms-auto mb-2 mb-lg-0">
+
+
+
+
+                  <!-- Nos métiers -->
+                  <li class="nav-item dropdown position-static">
+                    <a class="nav-link dropdown-toggle px-4 py-2 rounded-pill fw-bold shadow-sm" href="project.html"id="coproDropdown" role="button" data-bs-toggle="dropdown" aria-expanded="false" style="background-color: #80B5FF; color: white;">  Nos métiers</a>
+                    </a>
+                    <div class="dropdown-menu dropdown-bubble shadow p-4 mt-0 border-0">
+                      <div class="row w-100 justify-content-center">
+                        <div class="col-md-2">
+                          <h6 class="text-uppercase text-primary">Travaux de façade</h6>
+                          <ul class="list-unstyled">
+                            <li><a class="dropdown-item" href="facade_pierre_taille_paris.html">Pierre de taille</a></li>
+                            <li><a class="dropdown-item" href="ravalement_facade.html">Ravalement de façade</a></li>
+                            <li><a class="dropdown-item" href="isolation_mur_ext.html">Isolation<br> murs extérieurs</a></li>
+                          
+                          </ul>
+                        </div>
+
+
+                        <div class="col-md-2">
+                          <h6 class="text-uppercase text-primary">Travaux de couverture</h6>
+                          <ul class="list-unstyled">
+                            <li><a class="dropdown-item" href="toit_terrasse.html">Étanchéité et toit terrasse</a></li>
+                            <li><a class="dropdown-item" href="toiture_zinc.html">Remplacement toiture en zinc</a></li>
+                            <li><a class="dropdown-item" href="toiture_tuile.html">Remplacement toiture en tuiles</a></li>
+                            <li><a class="dropdown-item" href="rampants.html">Isolation rampants</a></li>
+                          </ul>
+                        </div>
+
+
+
+                        <div class="col-md-2">
+                          <h6 class="text-uppercase text-primary">Travaux de maçonnerie</h6>
+                          <ul class="list-unstyled">
+                            <li><a class="dropdown-item" href="Chapes_dalles_planchers.html">Chapes, dalles et plancher</a></li>
+                            <li><a class="dropdown-item" href="maconnerie_trad.html">Maçonnerie traditionnelle</a></li>
+                            <li><a class="dropdown-item" href="terrasse_cours.html">Terrasse et cours</a></li>
+                            <li><a class="dropdown-item" href="traitement_cave.html">Traitement des caves</a></li>
+                          </ul>
+                        </div>
+
+
+
+                        <div class="col-md-2">
+                          <h6 class="text-uppercase text-primary">Travaux d'isolation</h6>
+                          <ul class="list-unstyled">
+                            <li><a class="dropdown-item" href="isol_combleP.html">Isolation<br>combles perdues</a></li>
+                            <li><a class="dropdown-item" href="isolation_mur_ext.html">Isolation<br> murs extérieurs</a></li>
+                            <li><a class="dropdown-item" href="isolation_mur_int.html">Isolation<br> murs intérieurs</a></li>
+                            <li><a class="dropdown-item" href="rampants.html">Isolation rampants</a></li>
+                            <li><a class="dropdown-item" href="rempl_fene.html">Remplacement fenêtres</a></li>
+                          </ul>
+                        </div>
+
+
+                        <div class="col-md-2">
+                          <h6 class="text-uppercase text-primary">Travaux de structure</h6>
+                          <ul class="list-unstyled">
+                            <li><a class="dropdown-item" href="travaux_plancher.html">Travaux plancher</a></li>
+                            <li><a class="dropdown-item" href="charpentes.html">Travaux de charpentes</a></li>
+                            <li><a class="dropdown-item" href="mur_porteur.html">Ouverture des murs porteurs</a></li>
+                          </ul>
+                        </div>
+
+
+
+                        <div class="col-md-2">
+                          <h6 class="text-uppercase text-primary">Travaux Intérieur</h6>
+                          <ul class="list-unstyled">
+                            <li><a class="dropdown-item" href="travaux_int.html">Travaux d’intérieur</a></li>
+                          </ul>
+                        </div>
+                      </div>
+                    </div>
+                  </li>
+
+
+
+
+        <!-- Copropriétés -->
+        <li class="nav-item dropdown position-static">
+
+            <a class="nav-link dropdown-toggle px-4 py-2 rounded-pill fw-bold shadow-sm" href="#" id="coproDropdown" role="button" data-bs-toggle="dropdown" aria-expanded="false" style="background-color: #80B5FF; color: white; font-size: 1.5rem;"> 
+            Copropriétés
+          </a>
+          <div class="dropdown-menu dropdown-bubble shadow p-4 mt-0 border-0">
+            <div class="row w-100 justify-content-center">
+              <div class="col-md-6">
+                <h6 class="text-uppercase text-primary">Copropriétés</h6>
+                <ul class="list-unstyled">
+                  <li><a class="dropdown-item" href="electricite_copro.html">Travaux d'électricité</a></li>
+                  <li><a class="dropdown-item" href="plomberie_copro.html">Travaux de plomberie</a></li>
+                  <li><a class="dropdown-item" href="cage_escalier.html">Rénovation de cage d’escalier</a></li>
+                  <li><a class="dropdown-item" href="couverture_copro.html">Travaux de couverture</a></li>
+                  <li><a class="dropdown-item" href="ravalement_copro.html">Ravalement</a></li>
+                </ul>
+              </div>
+            </div>
+          </div>
+        </li>
+
+        <!-- Nos réalisations -->
+        <li class="nav-item">
+          <!-- <a class="nav-link dropdown-toggle px-4 py-2 rounded-pill fw-bold shadow-sm" href="project.html"id="coproDropdown" role="button" data-bs-toggle="dropdown" aria-expanded="false" style="background-color: #80B5FF; color: white;"> Nos réalisations</a> -->
+          <a class="nav-link px-4 py-2 rounded-pill fw-bold shadow-sm" href="project.html" style="background-color: #80B5FF; color: white;">
+            Nos réalisations
+          </a>
+          
+        </li>
+
+     
+                  <!-- En savoir plus -->
+                  <li class="nav-item dropdown position-static">
+                    <a class="nav-link dropdown-toggle px-4 py-2 rounded-pill fw-bold shadow-sm" href="project.html"id="coproDropdown" role="button" data-bs-toggle="dropdown" aria-expanded="false" style="background-color: #80B5FF; color: white;">  En savoir plus</a>
+                    
+                     
+                    </a>
+                    <div class="dropdown-menu dropdown-bubble shadow p-4 mt-0 border-0">
+                      <div class="row w-100 justify-content-center">
+                        <div class="col-md-4">
+                          <h6 class="text-uppercase text-primary">En savoir plus</h6>
+                          <ul class="list-unstyled">
+                            <li><a class="dropdown-item" href="about.html">Comment R2S fonctionne ?</a></li>
+                          </ul>
+                        </div>
+                      </div>
+                    </div>
+                  </li>
+                </ul>
+          
+<!-- ✅ Bloc Reno'mag + numéro centré sous le bouton -->
+<div class="d-none d-lg-block text-center">
+  <!-- Bouton Reno'mag centré -->
+  <a href="blog.html" class="btn fw-bold rounded-pill px-3 py-1 fs-6 shadow-sm" style="background-color: #e0e0e0; color: #000;">
+    Reno'mag
+  </a>
+
+  <!-- Numéro en dessous, également centré -->
+<div class="mt-1">
+  <span class="text-black fw-bold fs-6">
+    <i class="fas fa-phone-alt me-2 text-primary"></i> 01 41 71 20 68
+  </span>
+</div>
+
+</div>
+
+
+      <!-- ✅ BOUTON "DEVIS GRATUIT" -->
+      <div class="d-none d-lg-block ms-3">
+        <a href="devis.html" class="btn fw-bold rounded-pill px-4 py-2 shadow-sm" style="background-color: #dc3545; color: #ffffff;">
+          Estimation <br> gratuite 
+        </a>
+        
+      </div>
+    </div>
+  </div>
+</nav>
+
+
+      
+    <!-- fin barre de navigation -->
+
+
+
+
+    <!-- Modal Search Start -->
+    <div class="modal fade" id="searchModal" tabindex="-1" aria-labelledby="exampleModalLabel" aria-hidden="true">
+        <div class="modal-dialog modal-fullscreen">
+            <div class="modal-content rounded-0">
+                <div class="modal-header">
+                    <h4 class="modal-title mb-0" id="exampleModalLabel">Search by keyword</h4>
+                    <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+                </div>
+                <div class="modal-body d-flex align-items-center">
+                    <div class="input-group w-75 mx-auto d-flex">
+                        <input type="search" class="form-control p-3" placeholder="keywords" aria-describedby="search-icon-1">
+                        <span id="search-icon-1" class="input-group-text p-3"><i class="fa fa-search"></i></span>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+    <!-- Modal Search End -->
+
+
+
+
+    <div class="page-container" style="margin-top: 80px;">
+
+
+    <!-- Début Introduction -->
+
+    <section class="hero d-flex flex-wrap align-items-start justify-content-between px-4 py-5">
+
+  <!-- Bloc texte à gauche -->
+  <div class="hero-text" style="flex: 1 1 500px;">
+    <h1 style="font-size: 3rem; margin: 0 0 2rem 0; text-align: left;">Entreprise de rénovation fiable et certifiée</h1>
+
+    <h3 style="text-align: left;">R2S Bâtiment est une entreprise fiable<br>vous proposant des devis clés en main gratuitement</h3> 
+    <p style="text-align: left;">Nos devis sont réalisés en 48h</p>
+
+    <div class="progression-numbers mt-4">
+      <div class="item wow animate__animated animate__fadeInUp mb-4">
+        <div class="number text-primary fw-bold h4">1</div>
+        <h4 class="title violet h5 mt-2">Votre formulaire est rempli</h4>
+        <p>Nous vous recontactons dans les plus brefs délais pour discuter de votre projet d’isolation des murs par l’extérieur ou convenir d’un RDV à votre domicile.</p>
+      </div>
+
+      <div class="item wow animate__animated animate__fadeInUp mb-4" data-wow-delay="0.2s">
+        <div class="number text-primary fw-bold h4">2</div>
+        <h4 class="title violet h5 mt-2">Rendez-vous à votre domicile</h4>
+        <p>Un technicien-conseil se déplace gratuitement chez vous pour établir un diagnostic précis de vos façades et évaluer la faisabilité du projet.</p>
+      </div>
+
+      <div class="item wow animate__animated animate__fadeInUp mb-4" data-wow-delay="0.4s">
+        <div class="number text-primary fw-bold h4">3</div>
+        <h4 class="title violet h5 mt-2">Vous recevez votre devis gratuit</h4>
+        <p>Vous recevez votre devis détaillé avec l’ensemble des prestations et des produits préconisés.</p>
+      </div>
+    </div>
+  </div>
+
+  <!-- Formulaire à droite -->
+  <div class="hero-form wow animate__animated animate__fadeInRight" style="flex: 1 1 400px; padding: 2rem; background-color: #f8f9fa; border-radius: 1rem; box-shadow: 0 0 15px rgba(0,0,0,0.05);">
+    <form action="contact-smtp.php" method="POST">
+
+      <!-- Corps de métier avec cases à cocher -->
+<div class="mb-3">
+  <label class="form-label fw-bold">Type(s) de travaux *</label>
+  <div class="form-check">
+    <input class="form-check-input" type="checkbox" name="corps[]" value="Isolation" id="corpsIsolation" required>
+    <label class="form-check-label" for="corpsIsolation">Isolation</label>
+  </div>
+  <div class="form-check">
+    <input class="form-check-input" type="checkbox" name="corps[]" value="Façade" id="corpsFacade">
+    <label class="form-check-label" for="corpsFacade">Façade</label>
+  </div>
+  <div class="form-check">
+    <input class="form-check-input" type="checkbox" name="corps[]" value="Couverture" id="corpsCouverture">
+    <label class="form-check-label" for="corpsCouverture">Couverture</label>
+  </div>
+  <div class="form-check">
+    <input class="form-check-input" type="checkbox" name="corps[]" value="Structure" id="corpsStructure">
+    <label class="form-check-label" for="corpsStructure">Structure</label>
+  </div>
+  <div class="form-check">
+    <input class="form-check-input" type="checkbox" name="corps[]" value="Plomberie" id="corpsPlomberie">
+    <label class="form-check-label" for="corpsPlomberie">Plomberie</label>
+  </div>
+  <div class="form-check">
+    <input class="form-check-input" type="checkbox" name="corps[]" value="Électricité" id="corpsElectricite">
+    <label class="form-check-label" for="corpsElectricite">Électricité</label>
+  </div>
+  <div class="form-check">
+    <input class="form-check-input" type="checkbox" name="corps[]" value="Travaux intérieur" id="corpsInterieur">
+    <label class="form-check-label" for="corpsInterieur">Travaux intérieur</label>
+  </div>
+</div>
+
+      <!-- Description projet -->
+      <div class="mb-3">
+        <label for="description" class="form-label fw-bold">Description du projet *</label>
+        <textarea class="form-control" id="description" name="description" rows="4" required placeholder="Décrivez votre projet ici..."></textarea>
+      </div>
+
+      <!-- Nom -->
+      <div class="mb-3">
+        <label for="nom" class="form-label fw-bold">Nom *</label>
+        <input type="text" class="form-control" id="nom" name="nom" required>
+      </div>
+
+      <!-- Prénom -->
+      <div class="mb-3">
+        <label for="prenom" class="form-label fw-bold">Prénom *</label>
+        <input type="text" class="form-control" id="prenom" name="prenom" required>
+      </div>
+
+      <!-- Code postal -->
+      <div class="mb-3">
+        <label for="cp" class="form-label fw-bold">Code postal *</label>
+        <input type="text" class="form-control" id="cp" name="code_postal" pattern="\d{5}" maxlength="5" required>
+      </div>
+
+      <!-- Email -->
+      <div class="mb-3">
+        <label for="email" class="form-label fw-bold">Email *</label>
+        <input type="email" class="form-control" id="email" name="email" required>
+      </div>
+
+      <!-- RGPD -->
+      <div class="form-check mb-4">
+        <input class="form-check-input" type="checkbox" id="rgpd" name="rgpd" required>
+        <label class="form-check-label small" for="rgpd">
+          J’accepte que mes données soient utilisées dans le cadre de ma demande et conformément à la <a href="confidentialite.html" target="_blank">politique de confidentialité</a>.
+        </label>
+      </div>
+
+      <!-- Bouton envoyer -->
+      <button type="submit" class="btn btn-primary w-100">Envoyer ma demande</button>
+    </form>
+  </div>
+</section>
+
+
+<!-- SECTION RÉALISATIONS -->
+<section class="section" id="realisations">
+  <div class="container text-center">
+    <h2 class="section-title">Nos Réalisations</h2>
+    
+    <div class="row justify-content-center">
+      <div class="col-md-4 mb-4">
+        <img src="img/corpo_fac_isol.jpg" alt="Ravalement en copropriété" style="border-radius: 1.5rem;" class="img-fluid rounded-4 shadow">
+      </div>
+      <div class="col-md-4 mb-4">
+        <img src="img/isolationmodenature.JPG" alt="isolation des murs par l'extérieur et garde-corps" style="border-radius: 1.5rem;" class="img-fluid rounded-4 shadow">
+      </div>
+      <div class="col-md-4 mb-4">
+        <img src="img/maconnerietrad.jpg" alt="traitement de cave maçonnerie traditionnel à la chaux" style="border-radius: 1.5rem;" class="img-fluid rounded-4 shadow">
+      </div>
+    </div>
+
+    <a href="project.html" class="btn fw-bold rounded-pill px-4 py-2 mt-3" style="background-color: #195ca7; color: #ffffff;">
+      En voir plus
+    </a>
+  </div>
+</section>
+
+
+<!-- SECTION spé  -->
+<section class="about-r2s pt-0 pb-4">
+  <div class="container text-center">
+    <h2 class="section-title" style="margin-bottom: 5rem;">Nos spécialités</h2>
+
+    <div class="d-flex flex-wrap justify-content-center gap-4">
+
+      <div class="specialty-item">
+        <div class="specialty-bubble">
+          <img src="img/isol.png" alt="Isolation murs extérieurs">
+        </div>
+        <div class="bubble-label">Isolation murs extérieurs</div>
+      </div>
+
+      <div class="specialty-item">
+        <div class="specialty-bubble">
+          <img src="img/Traux toit en zinc.png" alt="Remplissage toiture zinc">
+        </div>
+        <div class="bubble-label">Remplissage toiture zinc</div>
+      </div>
+
+      <div class="specialty-item">
+        <div class="specialty-bubble">
+          <img src="img/maconnerietrad.jpg" alt="Maçonnerie traditionnelle">
+        </div>
+        <div class="bubble-label">Maçonnerie traditionnelle</div>
+      </div>
+
+      <div class="specialty-item">
+        <div class="specialty-bubble">
+          <img src="img/isolation_toit.png" alt="Isolation rampants">
+        </div>
+        <div class="bubble-label">Isolation des rampants</div>
+      </div>
+
+      <div class="specialty-item">
+        <div class="specialty-bubble">
+          <img src="img/carpenter-man-working-wood.jpg" alt="Travaux de charpente">
+        </div>
+        <div class="bubble-label">Travaux de charpente</div>
+      </div>
+
+    </div>
+  </div>
+</section>
+</div>
+
+
+
+
+<footer class="footer text-white bg-dark pt-5">
+    <div class="container">
+      <div class="row gx-5 gy-4 align-items-start">
+  
+        <!-- Colonne 1 : Contact -->
+        <div class="col-lg-3 col-md-6">
+          <h5 class="text-primary mb-3">Coordonnées</h5>
+          <p><i class="fas fa-map-marker-alt me-2"></i>55 Rue Cartier-Bresson, 93500 Pantin</p>
+          <p><i class="fas fa-phone me-2"></i>01 41 71 20 68</p>
+          <a href="contact.html" class="btn btn-outline-light btn-sm mt-2">Contactez-nous</a>
+
+          <a href="mentions-legales.html" class="text-white small d-block mt-3">Mentions légales</a>
+          <a href="confidentialite.html" class="text-white small d-block mt-1">Politique de confidentialité</a>
+        </div>
+  
+        <!-- Colonne 2 : Blog et liens utiles -->
+        <div class="col-lg-9 col-md-6">
+          <div class="row">
+            
+            <!-- Lien vers le blog -->
+            <div class="col-sm-4 mb-4">
+              <h5 class="text-primary mb-3">Renov'Mag</h5>
+              <a href="blog.html" class="btn btn-outline-primary btn-sm">Accéder au blog</a>
+            </div>
+  
+            <!-- Liens utiles colonne 1 -->
+            <div class="col-sm-4">
+              <h5 class="text-primary mb-3">Liens utiles</h5>
+              <ul class="list-unstyled">
+                <li><a href="isolation_mur_ext.html" class="text-primary">Isolation murs extérieure</a></li>
+                <li><a href="rampants.html" class="text-primary">Isolation des rampants</a></li>
+                <li><a href="maconnerie_trad.html" class="text-primary">Maçonnerie traditionnel</a></li>
+                <li><a href="about.html" class="text-primary">A propos</a></li>
+                <li><a href="facade_pierre_taille_paris.html" class="text-primary">Facade</a></li>
+                <li><a href="isol_combleP.html" class="text-primary">Isolation combles perdus</a></li>
+                <li><a href="rempl_fene.html" class="text-primary">Remplacement des fênetre</a></li>
+                <li><a href="plomberie_copro.html" class="text-primary">Plomberie
+                </a></li>
+              </ul>
+            </div>
+  
+            <!-- Liens utiles colonne 2 -->
+            <div class="col-sm-4">
+              <h5 class="text-primary mb-3 d-none d-sm-block">&nbsp;</h5> <!-- espace visuel -->
+              <ul class="list-unstyled">
+                <li><a href="project.html" class="text-primary">Réalisation</a></li>
+                <li><a href="traitement_cave.html" class="text-primary">Caves</a></li>
+                <li><a href="cage_escalier.html" class="text-primary">Cage d'escalier</a></li>
+                <li><a href="terrasse_cours.html" class="text-primary">Terrasse et cours</a></li>
+                <li><a href="Mur_Porteur.html" class="text-primary">Murs porteurs</a></li>
+                <li><a href="charpentes.html" class="text-primary">Travaux de charpente</a></li>
+                <li><a href="couverture_copro.html" class="text-primary">Travaux couverture</a></li>
+                <li><a href="devis.html" class="text-primary">Estimation gratuite</a></li>
+              </ul>
+            </div>
+  
+          </div>
+        </div>
+  
+      </div>
+    </div>
+  </footer>
+  
+ 
+    <!-- Copyright Start -->
+    <div class="container-fluid copyright py-4">
+      <div class="container">
+          <div class="row g-4 align-items-center">
+              <div class="col-md-6 text-center text-md-start mb-md-0">
+                  <span class="text-body"><a href="#" class="border-bottom text-white"><i class="fas fa-copyright text-light me-2"></i>R2S Batiment</a>, All right reserved.</span>
+              </div>
+              <div class="col-md-6 text-center text-md-end text-body">
+                  <!--/*** This template is free as long as you keep the below author’s credit link/attribution link/backlink. ***/-->
+                  <!--/*** If you'd like to use the template without the below author’s credit link/attribution link/backlink, ***/-->
+                  <!--/*** you can purchase the Credit Removal License from "https://htmlcodex.com/credit-removal". ***/-->
+                  Designed By <a class="border-bottom text-white" href="https://htmlcodex.com">HTML Codex</a>
+              </div>
+          </div>
+      </div>
+  </div>
+  <!-- Copyright End -->
+
+
+  <!-- Back to Top -->
+  <a href="#" class="btn btn-secondary btn-lg-square back-to-top"><i class="fa fa-arrow-up"></i></a>   
+
+  
+<!-- JavaScript Libraries -->
+<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.6.4/jquery.min.js"></script>
+<script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.0/dist/js/bootstrap.bundle.min.js"></script>
+<script src="lib/wow/wow.min.js"></script>
+<script src="lib/easing/easing.min.js"></script>
+<script src="lib/waypoints/waypoints.min.js"></script>
+<script src="lib/counterup/counterup.min.js"></script>
+
+<script src="lib/lightbox/js/lightbox.min.js"></script>
+
+
+<!-- Template Javascript -->
+<script src="js/main.js"></script>
+<script src="js/cookies.js"></script>
+</body>
+
+</html>
