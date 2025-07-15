@@ -1,0 +1,140 @@
+# ==================================
+# R2S Bâtiment - GitIgnore File
+# ==================================
+
+# ===========================================
+# SENSITIVE FILES & CONFIGURATION
+# ===========================================
+# PHP configuration with database credentials
+config.php
+*.config.php
+.env
+.env.local
+.env.production
+
+# Email & SMTP credentials
+*smtp*
+PHPMailer/examples/
+contact-smtp.php
+
+# ===========================================
+# GENERATED & COMPILED FILES
+# ===========================================
+# Compiled CSS from SCSS
+css/bootstrap.min.css
+css/style.css
+*.css.map
+
+# Minified JavaScript files
+js/*.min.js
+lib/**/*.min.js
+
+# ===========================================
+# DEVELOPMENT FILES
+# ===========================================
+# SCSS cache and temporary files
+.sass-cache/
+*.scss.cache
+.cache/
+
+# Development notes and debug files
+DO_NOT_UPLOAD_HERE
+test_debug.txt
+*.debug
+*.log
+
+# ===========================================
+# SYSTEM & EDITOR FILES
+# ===========================================
+# Windows
+Thumbs.db
+ehthumbs.db
+Desktop.ini
+$RECYCLE.BIN/
+
+# macOS
+.DS_Store
+.AppleDouble
+.LSOverride
+Icon?
+
+# Linux
+*~
+.fuse_hidden*
+.Trash-*
+
+# VS Code
+.vscode/
+*.code-workspace
+
+# Sublime Text
+*.sublime-project
+*.sublime-workspace
+
+# ===========================================
+# BACKUP & ARCHIVE FILES
+# ===========================================
+# ZIP archives and backups
+*.zip
+*.rar
+*.7z
+*.tar.gz
+*.backup
+*-backup/
+.trash/
+
+# Specific to your project
+r2sbat.fr.zip
+
+# ===========================================
+# DEPENDENCY MANAGEMENT
+# ===========================================
+# Node.js (if you add npm/yarn later)
+node_modules/
+npm-debug.log*
+yarn-debug.log*
+yarn-error.log*
+package-lock.json
+yarn.lock
+
+# Composer (PHP dependencies)
+vendor/
+composer.lock
+
+# ===========================================
+# HOSTING & DEPLOYMENT
+# ===========================================
+# FTP deployment files
+.ftpconfig
+.ftppass
+.ftpsync
+.deployconfig
+
+# cPanel generated files
+.cpanel/
+.htaccess.backup
+error_log
+
+# ===========================================
+# IMAGE OPTIMIZATION TEMP FILES
+# ===========================================
+# Image processing temporary files
+img/temp/
+img/cache/
+img/*.tmp
+
+# ===========================================
+# ANALYTICS & TRACKING
+# ===========================================
+# Google Analytics temp files
+gtag/
+analytics/
+*.analytics
+
+# ===========================================
+# SECURITY
+# ===========================================
+# Security scanner results
+security-scan/
+*.security
+vulnerability-report.*
