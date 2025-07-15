@@ -1,0 +1,301 @@
+<!DOCTYPE html>
+<html lang="fr">
+  <head>
+    <meta charset="utf-8" />
+    <title>R2S Batiment</title>
+    <meta content="width=device-width, initial-scale=1.0" name="viewport" />
+
+    <!-- Données structurées pour SEO local -->
+    <script type="application/ld+json">
+      {...}
+    </script>
+    <!-- (No changes here, it's good) -->
+
+    <meta
+      name="description"
+      content="R2S Bâtiment est une entreprise spécialisée en rénovation à Paris et en Ile-de-France : façade, isolation, toiture, maçonnerie. Devis gratuit en 72h."
+    />
+    <meta
+      name="keywords"
+      content="rénovation, ravalement, isolation, toiture, copropriété, bâtiment, Paris, 78, 77, 94, 93, 92, 91, 95, Ile-de-France, devis gratuit, entreprise rénovation"
+    />
+
+    <!-- Google Web Fonts -->
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <!-- ✨ REFACTO: Consolidated fonts. Load only what's used. Outfit and Poppins. -->
+    <link
+      href="https://fonts.googleapis.com/css2?family=Outfit:wght@300;400;500;600&family=Poppins:wght@500;600&display=swap"
+      rel="stylesheet"
+    />
+
+    <!-- Icon Font Stylesheet -->
+    <link
+      rel="stylesheet"
+      href="https://use.fontawesome.com/releases/v5.15.4/css/all.css"
+    />
+    <link
+      href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.4.1/font/bootstrap-icons.css"
+      rel="stylesheet"
+    />
+
+    <!-- Libraries Stylesheet -->
+    <!-- ✅ FIX: Removed duplicate animate.css. Kept only the local one. -->
+    <link href="lib/animate/animate.min.css" rel="stylesheet" />
+    <link href="lib/lightbox/css/lightbox.min.css" rel="stylesheet" />
+
+    <!-- Customized Bootstrap Stylesheet -->
+    <link href="css/bootstrap.min.css" rel="stylesheet" />
+
+    <!-- Your Custom Stylesheet (load last) -->
+    <link href="css/style.css" rel="stylesheet" />
+
+    <!-- Google tag (gtag.js) -->
+    <script
+      async
+      src="https://www.googletagmanager.com/gtag/js?id=AW-17322554459"
+    ></script>
+    <script>
+      {...}
+    </script>
+    <!-- (No changes here, it's good) -->
+  </head>
+
+  <body>
+    <!-- Spinner Start -->
+    <div
+      id="spinner"
+      class="show bg-white position-fixed translate-middle w-100 vh-100 top-50 start-50 d-flex align-items-center justify-content-center"
+    >
+      <div
+        class="spinner-border text-primary"
+        style="width: 3rem; height: 3rem"
+        role="status"
+      >
+        <span class="sr-only">Loading...</span>
+      </div>
+    </div>
+    <!-- Spinner End -->
+
+    <!-- ✅ FIX: Removed inline style="height: 30px;" and moved it to CSS -->
+    <div class="container-fluid topbar d-none d-lg-flex align-items-center">
+      <div class="row gx-0 w-100">
+        <div class="col-lg-4"></div>
+        <!-- Spacer -->
+        <div class="col-lg-4 text-center text-white">
+          <i class="fas fa-map-marker-alt me-2"></i>
+          Les dernières actualités sur
+          <a
+            href="blog.html"
+            class="text-white text-decoration-underline fw-bold"
+            >Réno'Mag</a
+          >
+        </div>
+        <div class="col-lg-4 text-end text-white pe-3">
+          <i class="fas fa-phone-alt me-2"></i> 01 41 71 20 68
+        </div>
+      </div>
+    </div>
+
+    <!-- Navbar -->
+    <nav
+      class="navbar navbar-expand-lg navbar-light navbar-custom sticky-top shadow-sm"
+    >
+      <div class="container-fluid">
+        <a class="navbar-brand" href="index.html">
+          <img src="img/logor2s.jpg" alt="R2S Bâtiment" class="logo-r2s" />
+        </a>
+
+        <button
+          class="navbar-toggler"
+          type="button"
+          data-bs-toggle="collapse"
+          data-bs-target="#navbarMetiers"
+          aria-controls="navbarMetiers"
+          aria-expanded="false"
+          aria-label="Toggle navigation"
+        >
+          <span class="navbar-toggler-icon"></span>
+        </button>
+
+        <div class="collapse navbar-collapse" id="navbarMetiers">
+          <ul class="navbar-nav ms-auto mb-2 mb-lg-0 align-items-center">
+            <!-- Nos métiers -->
+            <li class="nav-item dropdown">
+              <!-- ✅ FIX: Replaced inline style with a class -->
+              <a
+                class="nav-link dropdown-toggle nav-link-custom"
+                href="#"
+                id="metiersDropdown"
+                role="button"
+                data-bs-toggle="dropdown"
+                aria-expanded="false"
+              >
+                Nos métiers
+              </a>
+              <div class="dropdown-menu" aria-labelledby="metiersDropdown">
+                {...}
+              </div>
+              <!-- Content of dropdown unchanged -->
+            </li>
+
+            <!-- Copropriétés -->
+            <li class="nav-item dropdown">
+              <!-- ✅ FIX: Replaced inline style with a class -->
+              <a
+                class="nav-link dropdown-toggle nav-link-custom"
+                href="#"
+                id="coproDropdown"
+                role="button"
+                data-bs-toggle="dropdown"
+                aria-expanded="false"
+              >
+                Copropriétés
+              </a>
+              <div class="dropdown-menu" aria-labelledby="coproDropdown">
+                {...}
+              </div>
+              <!-- Content of dropdown unchanged -->
+            </li>
+
+            <!-- Nos réalisations -->
+            <li class="nav-item">
+              <!-- ✅ FIX: Replaced inline style with a class -->
+              <a class="nav-link nav-link-custom" href="project.html"
+                >Nos réalisations</a
+              >
+            </li>
+
+            <!-- En savoir plus -->
+            <li class="nav-item dropdown">
+              <!-- ✅ FIX: Replaced inline style with a class -->
+              <a
+                class="nav-link dropdown-toggle nav-link-custom"
+                href="#"
+                id="savoirPlusDropdown"
+                role="button"
+                data-bs-toggle="dropdown"
+                aria-expanded="false"
+              >
+                En savoir plus
+              </a>
+              <div class="dropdown-menu" aria-labelledby="savoirPlusDropdown">
+                {...}
+              </div>
+              <!-- Content of dropdown unchanged -->
+            </li>
+
+            <!-- ✨ REFACTO: Added utilities to the collapsed menu for mobile view -->
+            <li class="nav-item d-lg-none mobile-only-utility">
+              <a href="blog.html" class="btn btn-renomag mb-2 w-100"
+                >Reno'mag</a
+              >
+              <div class="text-black fw-bold fs-6">
+                <i class="fas fa-phone-alt me-2 text-primary"></i> 01 41 71 20
+                68
+              </div>
+              <a
+                href="devis.html"
+                class="btn btn-nav-estimate rounded-pill mt-3 w-100"
+                >Estimation gratuite</a
+              >
+            </li>
+          </ul>
+
+          <!-- Desktop-only utilities -->
+          <div class="d-none d-lg-flex align-items-center ms-4 gap-3">
+            <div class="text-center">
+              <a href="blog.html" class="btn btn-renomag rounded-pill"
+                >Reno'mag</a
+              >
+              <div class="mt-1">
+                <span class="text-black fw-bold fs-6">
+                  <i class="fas fa-phone-alt me-2 text-primary"></i> 01 41 71 20
+                  68
+                </span>
+              </div>
+            </div>
+            <a href="devis.html" class="btn btn-nav-estimate rounded-pill">
+              Estimation<br />gratuite
+            </a>
+          </div>
+        </div>
+      </div>
+    </nav>
+    <!-- End Navbar -->
+
+    <div class="page-container" style="margin-top: 40px">
+      <!-- Hero Section -->
+      <section class="hero">
+        <div class="hero-text">
+          <!-- ✅ FIX: Removed inline style, now controlled by h1 in CSS -->
+          <h1>R2S Bâtiment, une entreprise de rénovation en Ile-De-France</h1>
+          <h3>Une équipe de passionnés au cœur de chaque rénovation.</h3>
+          <p>
+            Devis gratuit en 72h à Paris et en Île-de-France (75, 77, 78, 91,
+            92, 93, 94, 95). Confiez-nous votre projet de A à Z.
+          </p>
+          <a href="devis.html" class="btn btn-primary">Estimer mon projet</a>
+        </div>
+        <div class="hero-image">
+          <img
+            src="img/photo1_bat.png"
+            alt="Immeuble parisien haussmannien en pierre de taille"
+          />
+        </div>
+      </section>
+
+      <!-- Réalisations Section -->
+      <section class="section" id="realisations">
+        <div class="container text-center">
+          <h2 class="section-title text-center">Nos Réalisations</h2>
+          <div class="row justify-content-center g-4">
+            <div class="col-md-4">
+              <!-- ✅ FIX: Replaced inline style with Bootstrap's utility class -->
+              <img
+                src="img/corpo_fac_isol.jpg"
+                alt="Ravalement en copropriété"
+                class="img-fluid rounded-4 shadow-sm"
+              />
+            </div>
+            <div class="col-md-4">
+              <img
+                src="img/isolationmodenature.JPG"
+                alt="Isolation des murs par l'extérieur et garde-corps"
+                class="img-fluid rounded-4 shadow-sm"
+              />
+            </div>
+            <div class="col-md-4">
+              <img
+                src="img/maconnerietrad.jpg"
+                alt="Traitement de cave maçonnerie traditionnel à la chaux"
+                class="img-fluid rounded-4 shadow-sm"
+              />
+            </div>
+          </div>
+          <a href="project.html" class="btn btn-primary mt-4"
+            >Voir plus de réalisations</a
+          >
+        </div>
+      </section>
+
+      <!-- Spécialités Section -->
+      <section class="section pt-0 pb-4">
+        <div class="container text-center">
+          <h2 class="section-title text-center mb-5">Nos spécialités</h2>
+          <div class="d-flex flex-wrap justify-content-center gap-4">
+            <!-- Items remain the same, they were already well-structured -->
+            <div class="specialty-item">{...}</div>
+            <div class="specialty-item">{...}</div>
+            <div class="specialty-item">{...}</div>
+            <div class="specialty-item">{...}</div>
+            <div class="specialty-item">{...}</div>
+          </div>
+        </div>
+      </section>
+    </div>
+
+    <!-- Footer, Copyright, Back to Top, and Scripts sections remain largely the same -->
+    <!-- ... -->
+  </body>
+</html>

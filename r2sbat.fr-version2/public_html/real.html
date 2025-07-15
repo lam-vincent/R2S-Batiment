@@ -1,0 +1,114 @@
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+  <meta charset="UTF-8">
+  <title>Nos Prestations</title>
+  <style>
+    body {
+      margin: 0;
+      font-family: Arial, sans-serif;
+      background-color: #f4f4f4;
+    }
+
+    h1 {
+      text-align: center;
+      padding: 40px 20px 20px;
+    }
+
+    .prestations-grid {
+      display: grid;
+      grid-template-columns: repeat(auto-fit, minmax(280px, 1fr));
+      gap: 20px;
+      padding: 20px 40px 60px;
+      max-width: 1200px;
+      margin: auto;
+    }
+
+    .prestation-card {
+      position: relative;
+      overflow: hidden;
+      border-radius: 12px;
+      box-shadow: 0 4px 12px rgba(0,0,0,0.1);
+      cursor: pointer;
+    }
+
+    .prestation-card img {
+      width: 100%;
+      height: 100%;
+      object-fit: cover;
+      transition: transform 0.4s ease;
+    }
+
+    .prestation-card:hover img {
+      transform: scale(1.05);
+    }
+
+    .prestation-title {
+      position: absolute;
+      bottom: 0;
+      left: 0;
+      right: 0;
+      background: rgba(0, 0, 0, 0.5);
+      color: #fff;
+      text-align: center;
+      padding: 12px;
+      font-size: 1.2em;
+      font-weight: bold;
+    }
+
+    a.prestation-link {
+      text-decoration: none;
+      color: inherit;
+    }
+  </style>
+</head>
+<body>
+
+  <h1>Nos Prestations</h1>
+
+  <div class="prestations-grid">
+    <a href="ravalement.html" class="prestation-link">
+      <div class="prestation-card">
+        <img src="ximg/ravalement.jpg" alt="Ravalement de façade">
+        <div class="prestation-title">Ravalement</div>
+      </div>
+    </a>
+
+    <a href="toiture.html" class="prestation-link">
+      <div class="prestation-card">
+        <img src="ximg/toiture.jpg" alt="Toiture">
+        <div class="prestation-title">Toiture</div>
+      </div>
+    </a>
+
+    <a href="peinture.html" class="prestation-link">
+      <div class="prestation-card">
+        <img src="ximg/peinture.jpg" alt="Peinture">
+        <div class="prestation-title">Peinture</div>
+      </div>
+    </a>
+
+    <a href="nettoyage.html" class="prestation-link">
+      <div class="prestation-card">
+        <img src="ximg/nettoyage.jpg" alt="Nettoyage">
+        <div class="prestation-title">Nettoyage</div>
+      </div>
+    </a>
+
+    <a href="isolation.html" class="prestation-link">
+      <div class="prestation-card">
+        <img src="ximg/isolation.jpg" alt="Isolation">
+        <div class="prestation-title">Isolation</div>
+      </div>
+    </a>
+
+    <a href="traitement.html" class="prestation-link">
+      <div class="prestation-card">
+        <img src="ximg/traitement.jpg" alt="Traitement de surface">
+        <div class="prestation-title">Traitement de surface</div>
+      </div>
+    </a>
+  </div>
+
+</body>
+</html>
