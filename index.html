@@ -1,10 +1,224 @@
 <!DOCTYPE html>
-<html lang="en">
+<html lang="fr">
   <head>
     <meta charset="UTF-8" />
-    <title>Hello World</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>
+      R2S BATIMENT - Rénovation en Île-de-France (75, 78, 95, 92, 77, 93, 94,
+      91)
+    </title>
+    <meta
+      name="description"
+      content="Entreprise de rénovation certifiée à Paris et Île-de-France. Travaux de façades, toitures, menuiseries, isolation. Devis gratuit."
+    />
+
+    <!-- Lien vers votre feuille de style CSS -->
+    <link rel="stylesheet" href="style.css" />
+
+    <!-- Lien vers Google Fonts pour une police moderne (Poppins) -->
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;600;700&display=swap"
+      rel="stylesheet"
+    />
+
+    <!-- Lien vers Font Awesome pour les icônes -->
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css"
+    />
   </head>
   <body>
-    <h1>Hello, world!</h1>
+    <!-- =========== HEADER / EN-TÊTE =========== -->
+    <header>
+      <div class="container">
+        <a href="#" class="logo">
+          <!-- Remplacez ce texte par votre logo -->
+          <!-- Exemple : <img src="votre-logo.png" alt="Logo R2S BATIMENT"> -->
+          R2S BATIMENT
+        </a>
+        <nav>
+          <ul>
+            <li><a href="#about">Qui sommes-nous ?</a></li>
+            <li><a href="#services">Nos Services</a></li>
+            <li><a href="#contact">Contact</a></li>
+          </ul>
+        </nav>
+        <a href="tel:+33000000000" class="btn btn-primary">Appelez-nous</a>
+        <!-- Mettez votre numéro de téléphone ici -->
+      </div>
+    </header>
+
+    <main>
+      <!-- =========== SECTION HÉROS / ACCUEIL =========== -->
+      <section id="hero">
+        <div class="container">
+          <h1>Entreprise de rénovation à Paris et alentours</h1>
+          <p class="subtitle">
+            Certifié pour vos travaux de : façades, toitures, menuiseries,
+            isolation, combles.
+          </p>
+          <div class="departments">
+            <span>75</span><span>78</span><span>95</span><span>92</span
+            ><span>77</span><span>93</span><span>94</span><span>91</span>
+          </div>
+          <a href="#contact" class="btn btn-secondary"
+            >Devis élaboré gratuitement</a
+          >
+        </div>
+      </section>
+
+      <!-- =========== SECTION "POURQUOI NOUS ?" / AVANTAGES =========== -->
+      <section id="features">
+        <div class="container">
+          <div class="feature-grid">
+            <div class="feature-item">
+              <i class="fa-solid fa-award"></i>
+              <h3>+20 ans d'expérience</h3>
+              <p>
+                Une compétence reconnue et une expertise solide dans le domaine
+                du bâtiment.
+              </p>
+            </div>
+            <div class="feature-item">
+              <i class="fa-solid fa-handshake-angle"></i>
+              <h3>Accompagnement personnalisé</h3>
+              <p>
+                Nous vous accompagnons dans chaque phase de votre projet en
+                toute tranquillité.
+              </p>
+            </div>
+            <div class="feature-item">
+              <i class="fa-solid fa-file-signature"></i>
+              <h3>Devis Gratuit</h3>
+              <p>
+                Recevez une estimation claire et détaillée de vos travaux sans
+                engagement.
+              </p>
+            </div>
+          </div>
+        </div>
+      </section>
+
+      <!-- =========== SECTION "QUI SOMMES-NOUS ?" / À PROPOS =========== -->
+      <section id="about" class="bg-light">
+        <div class="container about-flex">
+          <div class="about-text">
+            <h2>Des services pour aménager votre logement selon vos envies</h2>
+            <p>
+              <strong>R2S BATIMENT</strong>, votre entreprise de rénovation avec
+              plus de 20 ans d’expérience ! Basée à Pantin, notre zone
+              d’intervention s’étend sur un rayon de 100 km et couvre toute la
+              région de l’Île-de-France.
+            </p>
+            <p>
+              Nos équipes compétentes sont disponibles pour assurer un service
+              personnalisé et une satisfaction complète. Notre souci du détail
+              et nos exigences en matière de qualité assurent une réalisation
+              impeccable de chaque projet.
+            </p>
+            <p>
+              Nous sommes convaincus de la transparence et de la confiance :
+              c'est pourquoi nous proposons des conseils personnalisés, avec un
+              suivi rigoureux et des solutions adaptées à vos besoins
+              spécifiques.
+            </p>
+          </div>
+          <div class="about-image">
+            <!-- Mettez ici une image de votre équipe ou d'un chantier -->
+            <!-- Exemple : <img src="equipe-r2s.jpg" alt="Équipe de R2S BATIMENT"> -->
+            <img
+              src="https://via.placeholder.com/450x400"
+              alt="Illustration de travaux de rénovation"
+            />
+          </div>
+        </div>
+      </section>
+
+      <!-- =========== SECTION SERVICES =========== -->
+      <section id="services">
+        <div class="container">
+          <h2>Faites confiance à l'expertise de nos artisans</h2>
+          <div class="service-grid">
+            <div class="service-card">
+              <i class="fa-solid fa-hard-hat"></i>
+              <h3>Maçonnerie</h3>
+              <p>
+                Travaux de maçonnerie générale, construction et rénovation de
+                structures.
+              </p>
+            </div>
+            <div class="service-card">
+              <i class="fa-solid fa-paint-roller"></i>
+              <h3>Ravalement</h3>
+              <p>
+                Ravalement de façades pour redonner vie et protéger votre
+                bâtiment.
+              </p>
+            </div>
+            <div class="service-card">
+              <i class="fa-solid fa-home-user"></i>
+              <h3>Couverture</h3>
+              <p>
+                Réfection, réparation et entretien de tous types de toitures.
+              </p>
+            </div>
+          </div>
+        </div>
+      </section>
+
+      <!-- =========== SECTION CTA / APPEL À L'ACTION =========== -->
+      <section id="cta" class="bg-dark">
+        <div class="container">
+          <h2>Améliorez votre confort en toute confiance.</h2>
+          <p>
+            Avec R2S, optez pour la qualité supérieure dans vos travaux
+            d'isolation en Île-de-France.
+          </p>
+          <a href="#contact" class="btn btn-secondary"
+            >Prenez contact avec un conseiller</a
+          >
+        </div>
+      </section>
+    </main>
+
+    <!-- =========== FOOTER / PIED DE PAGE =========== -->
+    <footer id="contact">
+      <div class="container footer-grid">
+        <div class="footer-col">
+          <h3>R2S BATIMENT</h3>
+          <p>
+            Votre partenaire de confiance pour tous vos projets de rénovation en
+            Île-de-France.
+          </p>
+          <p>
+            <i class="fa-solid fa-location-dot"></i> 55 Rue Cartier-Bresson,
+            93500 Pantin, France
+          </p>
+        </div>
+        <div class="footer-col">
+          <h3>Contactez-nous</h3>
+          <!-- Remplacez par vos informations -->
+          <p>
+            <i class="fa-solid fa-phone"></i>
+            <a href="tel:+33000000000">00 00 00 00 00</a>
+          </p>
+          <p>
+            <i class="fa-solid fa-envelope"></i>
+            <a href="mailto:contact@r2s-batiment.fr">contact@r2s-batiment.fr</a>
+          </p>
+        </div>
+        <div class="footer-col">
+          <h3>Nos Horaires</h3>
+          <p><strong>Lundi - Vendredi :</strong> 08:00 - 18:00</p>
+          <p><strong>Samedi - Dimanche :</strong> Fermé</p>
+        </div>
+      </div>
+      <div class="footer-bottom">
+        <p>© 2025 R2S BATIMENT - Tous droits réservés.</p>
+        <p><a href="#">Mentions légales</a> - <a href="#">Vie privée</a></p>
+      </div>
+    </footer>
   </body>
 </html>
